@@ -44,99 +44,223 @@
   </div>
 </header>
 
-<section class="section project-detail-hero project-detail-hero-dc">
-  <div class="container">
-    <a href="projects.html" class="project-back-link">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
-      All Projects
-    </a>
+<div class="case-page">
+  <div class="case-dev-banner">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76Z"/></svg>
+    Still in active development — features and content may change.
+  </div>
+  <div class="case-page-wrapper">
+  <div class="case-top-bg case-top-bg-dc">
 
-    <div class="project-detail-head">
-      <div>
-        <span class="badge badge-personal">Personal Project</span>
-        <h1>DeutschChat</h1>
-        <p class="project-detail-intro">An AI-powered German learning platform designed around real conversations, translations, lessons and progress tracking.</p>
+  <section class="case-hero">
+    <div class="container case-hero-grid">
+      <div class="case-hero-text">
+        <a href="projects.html" class="project-back-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+          All Projects
+        </a>
+        <p class="case-eyebrow">// Personal Project</p>
+        <h1 class="case-title">DeutschChat</h1>
+        <p class="case-lede">AI-Powered German Language Learning Platform</p>
+        <p class="case-body">DeutschChat is a full-stack AI language-learning platform I designed and developed to make learning German more practical and conversational. Instead of relying solely on traditional exercises, the platform allows learners to practise German through realistic conversations with an AI learning companion, Lena.</p>
+        <div class="case-buttons">
+          <a href="https://deutsch-chat-eta.vercel.app/" class="btn btn-dark" target="_blank" rel="noopener">
+            View Live Site
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+          <a href="https://github.com/EllisHeidi/DeutschChat" class="btn btn-outline-dark" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+            View Code
+          </a>
+        </div>
       </div>
-      <div class="project-detail-actions">
-        <a href="https://github.com/EllisHeidi/DeutschChat" class="btn btn-dark" target="_blank" rel="noopener">
+      <div class="case-hero-media">
+        <div class="case-laptop">
+          <img src="Assets/Images/DC/dc laptop.png" alt="DeutschChat dashboard showing today's progress and a suggested conversation">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section case-overview">
+    <div class="container case-overview-grid">
+      <div class="case-overview-media">
+        <img src="Assets/Images/DC/42725d9a-1d07-4213-93a1-72dfd751d566.png" alt="DeutschChat conversation screen with an AI chat partner replying in German" class="case-overview-phone">
+      </div>
+      <div class="case-overview-text">
+        <p class="case-eyebrow">// Overview</p>
+        <h2>Project Overview</h2>
+        <p>I developed the application across both the frontend and backend, building the responsive user experience, authentication, learning infrastructure, database architecture, and AI-powered chat experience.</p>
+        <p>The platform uses Next.js, React and TypeScript on the frontend, with Supabase and PostgreSQL powering authentication, learner data, curriculum and persistent conversations. The chat experience is powered by OpenAI's GPT-5.6 Luna through the Responses API, allowing users to have contextual German conversations and interact with individual words for English translations. The application is deployed through Vercel and uses Row Level Security to protect user-specific learning and conversation data.</p>
+        <ul class="case-highlights">
+          <li>
+            <span class="case-highlight-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.4 8.4 0 0 1-4-1l-4 1 1-4a8.4 8.4 0 0 1-1-4 8.5 8.5 0 0 1 8.5-8.5h.5a8.5 8.5 0 0 1 7.5 8.5Z"/></svg>
+            </span>
+            <span><strong>AI Conversation Partner</strong><span>Realistic German conversations with Lena, powered by GPT-5.6 Luna.</span></span>
+          </li>
+          <li>
+            <span class="case-highlight-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>
+            </span>
+            <span><strong>Clickable Translations</strong><span>Tap any German word in a conversation for an instant English translation.</span></span>
+          </li>
+          <li>
+            <span class="case-highlight-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </span>
+            <span><strong>Secure & Persistent</strong><span>Supabase authentication and Row Level Security protect learner data and saved conversations.</span></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  </div>
+  </div>
+
+  <section class="case-section case-contrib case-contrib-dc">
+    <div class="container">
+      <p class="case-eyebrow">// Key Features</p>
+      <h2>What It Does</h2>
+      <div class="case-contrib-grid">
+        <div class="case-contrib-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>AI-powered German conversations with Lena</span></div>
+        <div class="case-contrib-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Persistent chat conversations</span></div>
+        <div class="case-contrib-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Clickable German words with English translations</span></div>
+        <div class="case-contrib-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Clear chat functionality</span></div>
+        <div class="case-contrib-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Structured CEFR-based learning curriculum</span></div>
+        <div class="case-contrib-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Learner progress tracking</span></div>
+        <div class="case-contrib-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Authentication and protected user data</span></div>
+        <div class="case-contrib-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Responsive, mobile-first interface</span></div>
+        <div class="case-contrib-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>German-focused vocabulary and grammar learning</span></div>
+        <div class="case-contrib-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Production deployment with Vercel and Supabase</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section case-tech case-tech-dc">
+    <div class="container">
+      <p class="case-eyebrow">// Tech Stack</p>
+      <h2>Built With</h2>
+      <div class="case-tech-groups">
+        <div class="case-tech-group">
+          <h3>Frontend</h3>
+          <div class="tags">
+            <span><img src="Assets/Images/Skills Icons/Next.js.png" alt="">Next.js</span>
+            <span><img src="Assets/Images/Skills Icons/React.png" alt="">React</span>
+            <span><img src="Assets/Images/Skills Icons/TypeScript.png" alt="">TypeScript</span>
+            <span><img src="Assets/Images/Skills Icons/Tailwind CSS.png" alt="">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="case-tech-group">
+          <h3>Backend</h3>
+          <div class="tags">
+            <span>Next.js Server Actions</span>
+            <span><img src="Assets/Images/Skills Icons/Supabase.png" alt="">Supabase</span>
+          </div>
+        </div>
+        <div class="case-tech-group">
+          <h3>Database</h3>
+          <div class="tags"><span><img src="Assets/Images/Skills Icons/PostgreSQL.png" alt="">PostgreSQL</span></div>
+        </div>
+        <div class="case-tech-group">
+          <h3>Authentication</h3>
+          <div class="tags"><span><img src="Assets/Images/Skills Icons/Supabase.png" alt="">Supabase Auth</span></div>
+        </div>
+        <div class="case-tech-group">
+          <h3>AI</h3>
+          <div class="tags">
+            <span><img src="Assets/Images/Skills Icons/OpenAI API-dark.png" alt="">OpenAI GPT-5.6 Luna</span>
+            <span>Responses API</span>
+          </div>
+        </div>
+        <div class="case-tech-group">
+          <h3>Deployment</h3>
+          <div class="tags"><span><img src="Assets/Images/Skills Icons/Vercel-dark.png" alt="">Vercel</span></div>
+        </div>
+        <div class="case-tech-group">
+          <h3>Version Control</h3>
+          <div class="tags">
+            <span><img src="Assets/Images/Skills Icons/Git.png" alt="">Git</span>
+            <span><img src="Assets/Images/Skills Icons/GitHub-dark.png" alt="">GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-cta">
+    <div class="container case-cta-inner">
+      <p class="case-eyebrow">// My Role</p>
+      <h2>Full-Stack Developer</h2>
+      <p>I am responsible for the end-to-end development of DeutschChat, including product architecture, UI/UX implementation, frontend development, backend architecture, database design, authentication, AI integration, testing, and deployment. I designed and built the application from the ground up and continue to drive its technical development and implementation end-to-end.</p>
+      <div class="case-buttons">
+        <a href="https://deutsch-chat-eta.vercel.app/" class="btn btn-accent" target="_blank" rel="noopener">
+          View Live Site
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+        </a>
+        <a href="https://github.com/EllisHeidi/DeutschChat" class="btn btn-outline" target="_blank" rel="noopener">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
           View Code
         </a>
       </div>
     </div>
+  </section>
 
-    <div class="project-detail-image">
-      <img src="Assets/Images/Project Images/Screenshot 2026-09-13 164914.png" alt="DeutschChat dashboard with sidebar navigation, a German lesson, vocabulary tracker and suggested conversation">
-    </div>
+  <footer class="footer" id="contact">
+    <img src="Assets/Images/footer.png" alt="Coastal view of Cape Town at dusk" class="footer-img">
+    <div class="footer-scrim"></div>
 
-    <div class="project-detail-grid">
-      <div class="project-detail-about">
-        <h2>About the project</h2>
-        <p>DeutschChat is an AI-powered German learning platform I built to make language practice feel like a real conversation rather than a flashcard drill. It combines lessons, vocabulary tracking and progress tracking with an AI conversation partner that responds in German, translates on request, and adapts to the learner's level.</p>
-        <p>It was built as a personal project to explore how OpenAI's API could be combined with a structured learning experience, backed by Supabase for authentication, data and progress storage.</p>
-      </div>
-      <aside class="project-detail-side">
-        <h3>Built With</h3>
-        <div class="tags">
-          <span>Next.js</span><span>Supabase</span><span>OpenAI</span><span>TypeScript</span>
+    <div class="footer-content">
+      <div class="container footer-grid">
+        <div class="footer-intro">
+          <p class="eyebrow eyebrow-light">05. <span class="eyebrow-line"></span> LET&rsquo;S BUILD</p>
+          <h2>SOMETHING GREAT.</h2>
+          <p>I'm always interested in interesting software, product and development opportunities.</p>
         </div>
-      </aside>
-    </div>
-  </div>
-</section>
 
-<footer class="footer" id="contact">
-  <img src="Assets/Images/footer.png" alt="Coastal view of Cape Town at dusk" class="footer-img">
-  <div class="footer-scrim"></div>
-
-  <div class="footer-content">
-    <div class="container footer-grid">
-      <div class="footer-intro">
-        <p class="eyebrow eyebrow-light">05. <span class="eyebrow-line"></span> LET&rsquo;S BUILD</p>
-        <h2>SOMETHING GREAT.</h2>
-        <p>I'm always interested in interesting software, product and development opportunities.</p>
-      </div>
-
-      <div class="footer-contact">
-        <a href="mailto:heidi.ellis16@gmail.com">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
-          heidi.ellis16@gmail.com
-        </a>
-        <a href="tel:+27648612082">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.4c1 .4 2 .6 3 .7a2 2 0 0 1 1.6 2Z"/></svg>
-          +27 64 861 2082
-        </a>
-        <p class="footer-loc">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
-          Cape Town, South Africa<br>Open to international relocation
-        </p>
-      </div>
-
-      <div class="footer-cta">
-        <div class="footer-socials">
-          <a href="#" aria-label="GitHub" target="_blank" rel="noopener">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+        <div class="footer-contact">
+          <a href="mailto:heidi.ellis16@gmail.com">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+            heidi.ellis16@gmail.com
           </a>
-          <a href="https://www.linkedin.com/in/heidi-ellis-011aa1264/" aria-label="LinkedIn" target="_blank" rel="noopener">
-            <img src="Assets/Images/Icons/linked in logo.webp" alt="LinkedIn" width="30" height="30" class="linkedin-icon">
+          <a href="tel:+27648612082">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.4c1 .4 2 .6 3 .7a2 2 0 0 1 1.6 2Z"/></svg>
+            +27 64 861 2082
           </a>
-          <a href="mailto:heidi.ellis16@gmail.com" aria-label="Email">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+          <p class="footer-loc">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            Cape Town, South Africa<br>Open to international relocation
+          </p>
+        </div>
+
+        <div class="footer-cta">
+          <div class="footer-socials">
+            <a href="#" aria-label="GitHub" target="_blank" rel="noopener">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/heidi-ellis-011aa1264/" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <img src="Assets/Images/Icons/linked in logo.webp" alt="LinkedIn" width="30" height="30" class="linkedin-icon">
+            </a>
+            <a href="mailto:heidi.ellis16@gmail.com" aria-label="Email">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+            </a>
+          </div>
+          <a href="mailto:heidi.ellis16@gmail.com" class="btn btn-dark">
+            Get in Touch
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
         </div>
-        <a href="mailto:heidi.ellis16@gmail.com" class="btn btn-dark">
-          Get in Touch
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </a>
+      </div>
+
+      <div class="footer-bottom container">
+        <span>HEIDI ELLIS 2026</span>
+        <span>SAME CURIOSITY. DIFFERENT PERSPECTIVE.</span>
       </div>
     </div>
+  </footer>
 
-    <div class="footer-bottom container">
-      <span>HEIDI ELLIS 2026</span>
-      <span>SAME CURIOSITY. DIFFERENT PERSPECTIVE.</span>
-    </div>
-  </div>
-</footer>
+</div>
 
 <script src="js/script.js"></script>
 </body>
